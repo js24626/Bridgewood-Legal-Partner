@@ -67,7 +67,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     // Observe only this specific section
-    const section = document.getElementById('aboutBee');
+    const section = document.getElementById('about');
     const observer = new IntersectionObserver(entries => {
         entries.forEach(entry => {
             if (entry.isIntersecting && !triggered) {
