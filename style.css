@@ -19,6 +19,27 @@
             animation: scroll-wheel 2s infinite linear;
         }
 
+      
 
+        html {
+            scroll-behavior: smooth;
+        }
+        .nav-link {
+            position: relative;
+            transition: color 0.3s;
+        }
+        .nav-link.active {
+            color: #d4d400;
+            font-weight: bold;
+        }
+        .nav-link.active::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: -4px;
+            width: 100%;
+            height: 2px;
+            background-color: #b1d400;
+        }
 
         
